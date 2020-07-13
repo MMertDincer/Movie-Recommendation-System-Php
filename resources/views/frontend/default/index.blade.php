@@ -35,7 +35,7 @@
 <!-- Page Content -->
 <div class="container">
 
-    <h1 class="my-4">Blog</h1>
+    <h1 class="my-4">Movies</h1>
 
     <div class="row">
 
@@ -63,7 +63,7 @@
             {!! $home_detail !!}
         </div>
         <div class="col-lg-6">
-            <img class="img-fluid rounded" src="/images/settings/{{$home_image}}" alt="">
+            <img class="img-fluid rounded" width="450" src="/images/settings/{{$home_image}}" alt="">
         </div>
     </div>
     <!-- /.row -->
@@ -76,7 +76,7 @@
             <p>{{$slogan}}</p>
         </div>
         <div class="col-md-4">
-            <a class="btn btn-lg btn-secondary btn-block" href="#">Contact us</a>
+            <a class="btn btn-lg btn-secondary btn-block" href="{{route('contact.Detail')}}">Contact us</a>
         </div>
     </div>
 
