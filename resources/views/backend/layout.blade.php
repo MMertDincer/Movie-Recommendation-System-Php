@@ -138,10 +138,12 @@
                 <!-- Optionally, you can add icons to the links -->
                 <li class="active"><a href="{{route('vpanel.Index')}}"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
                 <li><a href="{{route('slider.index')}}"><i class="fa fa-image"></i> <span>Sliders</span></a></li>
+                <li><a href="{{route('movie.index')}}"><i class="fa fa-film"></i> <span>Movies</span></a></li>
                 <li><a href="{{route('page.index')}}"><i class="fa fa-file"></i> <span>Pages</span></a></li>
                 <li><a href="{{route('blog.index')}}"><i class="fa fa-paper-plane"></i> <span>Blogs</span></a></li>
                 <li><a href="{{route('user.index')}}"><i class="fa fa-user"></i> <span>Users</span></a></li>
                 <li><a href="{{route('settings.Index')}}"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+
 
                 <!--
                 <li class="treeview">
@@ -157,7 +159,6 @@
                 </li>
                 -->
             </ul>
-            /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->
     </aside>

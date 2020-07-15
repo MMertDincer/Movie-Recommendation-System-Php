@@ -57,6 +57,10 @@ Route::namespace('Backend')->group(function () {
             Route::post('/blog/sortable', 'BlogController@sortable')->name('blog.Sortable');
             Route::resource('blog', 'BlogController');
 
+            //Movie Module
+            Route::post('/movie/sortable', 'MovieController@sortable')->name('movie.Sortable');
+            Route::resource('movie', 'MovieController');
+
             //Page Module
             Route::post('/page/sortable', 'PageController@sortable')->name('page.Sortable');
             Route::resource('page', 'PageController');

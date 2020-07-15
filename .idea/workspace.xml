@@ -20,21 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74feb03b-9082-4bc6-a5cf-df051085290c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/movies/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/movies/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/movies/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blogs/5ee8c966ae0dc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blogs/5ee8c96e95aa8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blogs/5ee8c97a58cd6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blogs/5ee8c981a767b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blogs/5ee8c9894126f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blogs/5ee8c99001964.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/settings/5ef26aeeadc06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sliders/5ed5dd53142b7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sliders/5ee0e3d20cbf6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sliders/5ee0e3e3a5642.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/blogs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/blogs/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/blogs/5f0c959394ed0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +158,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontend/default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -176,16 +170,16 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\mrs\public\backend\custom\css" />
-      <recent name="C:\xampp\htdocs\mrs\resources\views\backend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mrs\resources\views\backend" />
       <recent name="C:\xampp\htdocs\mrs\resources\views\frontend\default" />
       <recent name="C:\xampp\htdocs\mrs\resources\views\frontend\pages" />
       <recent name="C:\xampp\htdocs\mrs\app\Http\Controllers\Backend" />
       <recent name="C:\xampp\htdocs\mrs\resources\views\backend\users" />
-      <recent name="C:\xampp\htdocs\mrs\resources\views\backend\admins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mrs\public\backend\custom\css" />
+      <recent name="C:\xampp\htdocs\mrs\resources\views\backend" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -207,6 +201,8 @@
       <workItem from="1594481764768" duration="2884000" />
       <workItem from="1594595048886" duration="126000" />
       <workItem from="1594595203956" duration="8573000" />
+      <workItem from="1594664357599" duration="7929000" />
+      <workItem from="1594750159299" duration="12170000" />
     </task>
     <servers />
   </component>
@@ -223,12 +219,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590727333194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590727333194" />
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594750126573">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1594750126573" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592674166555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,10 +238,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="684" y="397" key="ComposerCompositePathDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590720696979" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1593105032176">
+    <state x="-1126" y="443" key="NewPhpFileDialog" timestamp="1594749869458">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1126" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1594749869458" />
+    <state x="794" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593105032176" />
+    <state x="812" y="222" key="RollbackChangesDialog" timestamp="1594839829614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593105032176" />
+    <state x="812" y="222" key="RollbackChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594839829614" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1590720700160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -249,6 +255,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="709" y="263" width="500" height="513" key="com.jetbrains.php.test.PhpNewTestDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590719001921" />
+    <state x="-1735" y="0" width="1489" height="1027" maximized="true" key="dock-window-1" timestamp="1594839714345">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1735" y="0" width="1489" height="1027" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594839714345" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1591074063609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
