@@ -16,7 +16,7 @@
 
                 @foreach($data['movies'] as $movies)
                 <div class="card mb-4">
-                    <img class="card-img-top" src="/images/movies/{{$movies->movie_file}}" alt="Card image cap">
+                    <img class="card-img-top" src="{{'https://image.tmdb.org/t/p/w500/'}}" alt="Card image cap">
                     <div class="card-body">
                         <h2 class="card-title">{{$movies->movie_title}}</h2>
                         <p class="card-text">{!! substr($movies->movie_content,0,140) !!}</p>

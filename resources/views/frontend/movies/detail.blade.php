@@ -17,7 +17,7 @@
             <img class="img-fluid rounded" src="/images/movies/{{$movie->movie_file}}" alt="">
 
             <hr>
-            
+
             <p class="lead">Ratings: <b style="color: gold;">{{$movie->voteaverage}}</b></p>
 
             <p class="lead"><b>Director:</b>{{$movie->director}}</p>
