@@ -5,3 +5,9 @@
 .table > tbody > tr > td {
     vertical-align: middle;
 }
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}

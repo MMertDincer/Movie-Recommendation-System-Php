@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74feb03b-9082-4bc6-a5cf-df051085290c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/movies/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/movies/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/movies/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/movies/detail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/movies/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blogs/5f0c959394ed0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/custom/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/custom/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" afterDir="false" />
@@ -154,11 +154,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontend/movies" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -171,15 +172,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mrs\resources\views\frontend\movies" />
+      <recent name="C:\xampp\htdocs\mrs\app\Http\Controllers\Frontend" />
       <recent name="C:\xampp\htdocs\mrs\resources\views\backend" />
       <recent name="C:\xampp\htdocs\mrs\resources\views\frontend\default" />
       <recent name="C:\xampp\htdocs\mrs\resources\views\frontend\pages" />
-      <recent name="C:\xampp\htdocs\mrs\app\Http\Controllers\Backend" />
-      <recent name="C:\xampp\htdocs\mrs\resources\views\backend\users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mrs\public" />
+      <recent name="C:\xampp\htdocs\mrs\resources\views\backend\autocomplates" />
+      <recent name="C:\xampp\htdocs\mrs\app\Http\Controllers\Backend" />
+      <recent name="C:\xampp\htdocs\mrs\resources\views\backend\movies" />
       <recent name="C:\xampp\htdocs\mrs\public\backend\custom\css" />
-      <recent name="C:\xampp\htdocs\mrs\resources\views\backend" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -202,7 +206,7 @@
       <workItem from="1594595048886" duration="126000" />
       <workItem from="1594595203956" duration="8573000" />
       <workItem from="1594664357599" duration="7929000" />
-      <workItem from="1594750159299" duration="12170000" />
+      <workItem from="1594750159299" duration="21672000" />
     </task>
     <servers />
   </component>
@@ -230,19 +234,19 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1594750126573" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592674166555">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1594867352261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592674166555" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594867352261" />
     <state x="684" y="397" key="ComposerCompositePathDialog" timestamp="1590720696979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="684" y="397" key="ComposerCompositePathDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590720696979" />
-    <state x="-1126" y="443" key="NewPhpFileDialog" timestamp="1594749869458">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1594841259302">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1126" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1594749869458" />
-    <state x="794" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593105032176" />
+    <state x="794" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594841259302" />
     <state x="812" y="222" key="RollbackChangesDialog" timestamp="1594839829614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -259,6 +263,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1735" y="0" width="1489" height="1027" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594839714345" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1594847931808">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594847931808" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1591074063609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -40,15 +40,15 @@
 
     <div class="row">
 
-        @foreach($data['blog'] as $blog)
+        @foreach($data['movie'] as $movie)
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="{{route('blogs.Detail',$blog->blog_slug)}}"><img class="card-img-top" src="/images/blogs/{{$blog->blog_file}}" alt=""></a>
+                <a href="{{route('movies.Detail',$movie->movie_slug)}}"><img class="card-img-top" src="/images/blogs/{{$movie->movie_file}}" alt=""></a>
                 <div class="card-body">
                     <h4 class="card-title">
-                        <a href="{{route('blogs.Detail',$blog->blog_slug)}}">{{$blog->blog_title}}</a>
+                        <a href="{{route('movies.Detail',$movie->movie_slug)}}">{{$movie->movie_title}}</a>
                     </h4>
-                    <p class="card-text">{!! substr($blog->blog_content,0,140) !!}</p>
+                    <p class="card-text">{!! substr($movie->movie_content,0,140) !!}</p>
                 </div>
             </div>
         </div>

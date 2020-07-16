@@ -20,6 +20,10 @@ Route::namespace('Frontend')->group(function () {
     Route::get('/blogs','BlogController@index')->name('blogs.Index');
     Route::get('/blogs/{slug}','BlogController@detail')->name('blogs.Detail');
 
+    //BLOG
+    Route::get('/movies','MovieController@index')->name('movies.Index');
+    Route::get('/movies/{slug}','MovieController@detail')->name('movies.Detail');
+
     //PAGE
     Route::get('/pages/{slug}','PageController@detail')->name('pages.Detail');
 
@@ -72,6 +76,11 @@ Route::namespace('Backend')->group(function () {
             //Admin Module
             Route::post('/user/sortable', 'UserController@sortable')->name('user.Sortable');
             Route::resource('user', 'UserController');
+
+            //Search Module
+            Route::get('/autocomplete', 'AutocompleteController@index');
+            Route::post('/autocomplete/fetch', 'AutocompleteController@fetch')->name('autocomplete.fetch');
+            Route::resource('autocomplate','AutocompleteController');
         });
     });
 });

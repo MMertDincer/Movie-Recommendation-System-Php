@@ -78,10 +78,20 @@
             <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
             </a>
+
+
             <!-- Navbar Right Menu -->
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <!-- User Account Menu -->
+                    <li class="nav-item">
+                        <div class="form-group" style="margin: 8px;">
+                            <input type="text" name="country_name" id="country_name" class="form-control"
+                                   placeholder="Enter Movie Name"/>
+                            <div id="countryList">
+                            </div>
+                        </div>
+                        {{ csrf_field() }}
+                    </li>
                     <li class="dropdown user user-menu">
                         <!-- Menu Toggle Button -->
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -93,7 +103,8 @@
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img src="/images/users/{{Auth::user()->user_file}}" class="img-circle" alt="User Image">
+                                <img src="/images/users/{{Auth::user()->user_file}}" class="img-circle"
+                                     alt="User Image">
 
                                 <p>
                                     {{Auth::user()->name}}
@@ -103,7 +114,8 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="{{route('user.edit',Auth::user()->id)}}" class="btn btn-default btn-flat">Edit Profile</a>
+                                    <a href="{{route('user.edit',Auth::user()->id)}}" class="btn btn-default btn-flat">Edit
+                                        Profile</a>
                                 </div>
                                 <div class="pull-right">
                                     <a href="{{route('vpanel.Logout')}}" class="btn btn-default btn-flat">Logout</a>
@@ -124,7 +136,8 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="/images/users/{{Auth::user()->user_file}}" width="160" height="160" class="img-circle" alt="User Image">
+                    <img src="/images/users/{{Auth::user()->user_file}}" width="160" height="160" class="img-circle"
+                         alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>{{Auth::user()->name}}</p>
@@ -136,7 +149,8 @@
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MENU</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="{{route('vpanel.Index')}}"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
+                <li class="active"><a href="{{route('vpanel.Index')}}"><i class="fa fa-link"></i> <span>Dashboard</span></a>
+                </li>
                 <li><a href="{{route('slider.index')}}"><i class="fa fa-image"></i> <span>Sliders</span></a></li>
                 <li><a href="{{route('movie.index')}}"><i class="fa fa-film"></i> <span>Movies</span></a></li>
                 <li><a href="{{route('page.index')}}"><i class="fa fa-file"></i> <span>Pages</span></a></li>
@@ -211,5 +225,32 @@
         alertify.error('{{$error}}')
     </script>
 @endforeach
+
+<script>
+    $(document).ready(function () {
+
+        $('#country_name').keyup(function () {
+            var query = $(this).val();
+            if (query != '') {
+                var _token = $('input[name="_token"]').val();
+                $.ajax({
+                    url: "{{ route('autocomplete.fetch') }}",
+                    method: "POST",
+                    data: {query: query, _token: _token},
+                    success: function (data) {
+                        $('#countryList').fadeIn();
+                        $('#countryList').html(data);
+                    }
+                });
+            }
+        });
+
+        $(document).on('click', 'li', function () {
+            $('#country_name').val($(this).text());
+            $('#countryList').fadeOut();
+        });
+
+    });
+</script>
 </body>
 </html>

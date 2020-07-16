@@ -36,10 +36,7 @@
                     <a class="nav-link" href="{{route('home.Index')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('blogs.Index')}}">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/{{$slug}}">Pages</a>
+                    <a class="nav-link" href="{{route('movies.Index')}}">Movie</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact.Detail')}}">Contact Us</a>
