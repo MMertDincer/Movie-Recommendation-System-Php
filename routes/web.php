@@ -30,6 +30,11 @@ Route::namespace('Frontend')->group(function () {
     //CONTACT
     Route::get('/contact','DefaultController@contact')->name('contact.Detail');
     Route::post('/contact','DefaultController@sendmail');
+
+    //Search Module
+    Route::get('/autocomplete', 'AutocompleteController@index');
+    Route::post('/autocomplete/fetch', 'AutocompleteController@fetch')->name('autocomplete.fetch');
+
 });
 
 Route::namespace('Backend')->group(function () {
@@ -39,6 +44,7 @@ Route::namespace('Backend')->group(function () {
         Route::get('/', 'defaultController@login')->name('vpanel.Login')->middleware('CheckLogin');
         Route::get('/logout', 'defaultController@---logout')->name('vpanel.Logout');
         Route::post('/login', 'defaultController@authenticate')->name('vpanel.Authenticate');
+
     });
 
     Route::middleware(['admin'])->group(function () {
@@ -77,10 +83,7 @@ Route::namespace('Backend')->group(function () {
             Route::post('/user/sortable', 'UserController@sortable')->name('user.Sortable');
             Route::resource('user', 'UserController');
 
-            //Search Module
-            Route::get('/autocomplete', 'AutocompleteController@index');
-            Route::post('/autocomplete/fetch', 'AutocompleteController@fetch')->name('autocomplete.fetch');
-            Route::resource('autocomplate','AutocompleteController');
+
         });
     });
 });
@@ -88,3 +91,5 @@ Route::namespace('Backend')->group(function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+

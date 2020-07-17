@@ -41,6 +41,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact.Detail')}}">Contact Us</a>
                 </li>
+                <li>
+                    <div class="form-group" style="margin: 8px;">
+                        <input type="text" name="country_name" id="country_name" class="form-control"
+                               placeholder="Enter Movie Name"/>
+                        <div id="countryList">
+                        </div>
+                    </div>
+                    {{ csrf_field() }}
+                </li>
                 @guest
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" style="color: white;" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -78,6 +87,7 @@
 
 
 @yield('content')
+
 <!-- Footer -->
 <footer class="py-5 bg-dark footer">
     <div class="container">
@@ -91,6 +101,32 @@
 <script src="/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/js/custom.js"></script>
 
-</body>
+<script>
+    $(document).ready(function () {
 
+        $('#country_name').keyup(function () {
+            var query = $(this).val();
+            if (query != '') {
+                var _token = $('input[name="_token"]').val();
+                $.ajax({
+                    url: "{{ route('autocomplete.fetch') }}",
+                    method: "POST",
+                    data: {query: query, _token: _token},
+                    success: function (data) {
+                        $('#countryList').fadeIn();
+                        $('#countryList').html(data);
+                    }
+                });
+            }
+        });
+
+        $(document).on('click', 'li', function () {
+            $('#country_name').val($(this).text());
+            $('#countryList').fadeOut();
+        });
+
+    });
+</script>
+
+</body>
 </html>

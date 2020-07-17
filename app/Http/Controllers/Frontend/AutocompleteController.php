@@ -1,18 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Backend;
+namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use DB;
 
 class AutocompleteController extends Controller
 {
-    //for create controller - php artisan make:controller AutocompleteController
-
     function index()
     {
-        return view('backend.layout');
+        return view('frontend.layout');
     }
 
     function fetch(Request $request)
@@ -32,7 +29,8 @@ class AutocompleteController extends Controller
             echo $output;
 
 
+        } else {
+            dd($request);
         }
     }
-
 }

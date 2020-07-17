@@ -43,7 +43,7 @@
         @foreach($data['movie'] as $movie)
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="{{route('movies.Detail',$movie->movie_slug)}}"><img class="card-img-top" src="/images/blogs/{{$movie->movie_file}}" alt=""></a>
+                <a href="{{route('movies.Detail',$movie->movie_slug)}}"><img class="card-img-top" src="{{'https://image.tmdb.org/t/p/w500'.$movie->movie_cover_link}}" alt=""></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="{{route('movies.Detail',$movie->movie_slug)}}">{{$movie->movie_title}}</a>

@@ -16,7 +16,7 @@
 
                 @foreach($data['movies'] as $movies)
                 <div class="card mb-4">
-                    <img class="card-img-top" src="{{'https://image.tmdb.org/t/p/w500/'}}" alt="Card image cap">
+                    <img class="card-img-top" src="{{'https://image.tmdb.org/t/p/w500'.$movies->movie_cover_link}}" alt="Card image cap">
                     <div class="card-body">
                         <h2 class="card-title">{{$movies->movie_title}}</h2>
                         <p class="card-text">{!! substr($movies->movie_content,0,140) !!}</p>
@@ -43,10 +43,11 @@
                     <h5 class="card-header">Search</h5>
                     <div class="card-body">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
+                            <input type="text" name="country_name" id="country_name" class="form-control" placeholder="Search for...">
+                            <div id="countryList">
+                            </div>
+                                {{ csrf_field() }}
+
                         </div>
                     </div>
                 </div>

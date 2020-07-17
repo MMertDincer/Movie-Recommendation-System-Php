@@ -20,13 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74feb03b-9082-4bc6-a5cf-df051085290c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/data/movieCover.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AutocompleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AutocompleteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_14_175854_create_full_text_searches_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/MovieCoverSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MovieCoverSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/movies/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/movies/detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/movies/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/movies/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +208,7 @@
       <workItem from="1594595048886" duration="126000" />
       <workItem from="1594595203956" duration="8573000" />
       <workItem from="1594664357599" duration="7929000" />
-      <workItem from="1594750159299" duration="36726000" />
+      <workItem from="1594750159299" duration="49654000" />
     </task>
     <servers />
   </component>
@@ -233,10 +237,10 @@
     </state>
     <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1594750126573" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594908249636" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1594909366395">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1594929645407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594909366395" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594929645407" />
     <state x="684" y="397" key="ComposerCompositePathDialog" timestamp="1590720696979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -14,7 +14,7 @@
         <div class="col-lg-8">
 
             <!-- Preview Image -->
-            <img class="img-fluid rounded" src="/images/movies/{{$movie->movie_file}}" alt="">
+            <img class="img-fluid rounded" src="{{'https://image.tmdb.org/t/p/w500'.$movie->movie_cover_link}}" alt="">
 
             <hr>
 
