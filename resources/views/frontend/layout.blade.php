@@ -44,7 +44,7 @@
                 <li>
                     <div class="form-group" style="margin: 8px;">
                         <input type="text" name="country_name" id="country_name" class="form-control"
-                               placeholder="Enter Movie Name"/>
+                               placeholder="Enter Movie Name" autocomplete="off"/>
                         <div id="countryList">
                         </div>
                     </div>
@@ -67,6 +67,9 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{route('home')}}">
+                                Profile
+                            </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -126,6 +129,15 @@
         });
 
     });
+</script>
+
+<script type="text/javascript">
+    $(document).ready( function () {
+        $(".form-control-range").on('change mousemove',function(){
+            $("#formControlRangeValue").text($(".form-control-range").val())
+        });
+    });
+
 </script>
 
 </body>

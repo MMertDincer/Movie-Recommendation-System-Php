@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74feb03b-9082-4bc6-a5cf-df051085290c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/autocomplete.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AutocompleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AutocompleteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/AutocompleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/AutocompleteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MovieCoverSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MovieCoverSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/default/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/movies/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/movies/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/movies/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/movies/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +205,7 @@
       <workItem from="1594595048886" duration="126000" />
       <workItem from="1594595203956" duration="8573000" />
       <workItem from="1594664357599" duration="7929000" />
-      <workItem from="1594750159299" duration="49654000" />
+      <workItem from="1594750159299" duration="64049000" />
     </task>
     <servers />
   </component>
@@ -245,11 +242,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="684" y="397" key="ComposerCompositePathDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590720696979" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1594841259302">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1595011268819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1126" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1594749869458" />
-    <state x="794" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594841259302" />
+    <state x="794" y="443" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595011268819" />
     <state x="812" y="222" key="RollbackChangesDialog" timestamp="1594839829614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

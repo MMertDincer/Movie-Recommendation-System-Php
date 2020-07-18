@@ -25,6 +25,15 @@
             <!-- Post Content -->
             <p class="lead">{!! $movie->movie_content !!} <b>Cast:</b> {{$movie->cast}}</p>
 
+            <form action="{{route('movies.store', $movie->id)}}" method="POST">
+                @CSRF
+                <div class="form-group">
+                    <label for="formControlRange" id="formControlRangeValue">5</label>
+                    <input type="range" min="0.0" max="10.0" step="0.1" name="movie_rate" class="form-control-range" id="formControlRange">
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+
 
             <hr>
 
@@ -150,5 +159,9 @@
 <!-- /.container -->
 
 @endsection
+@section('js')@endsection
 @section('css') @endsection
-@section('js') @endsection
+
+
+
+

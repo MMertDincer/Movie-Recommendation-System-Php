@@ -23,6 +23,7 @@ Route::namespace('Frontend')->group(function () {
     //BLOG
     Route::get('/movies','MovieController@index')->name('movies.Index');
     Route::get('/movies/{slug}','MovieController@detail')->name('movies.Detail');
+    Route::post('/movies/{id}', 'MovieController@store')->name('movies.store');
 
     //PAGE
     Route::get('/pages/{slug}','PageController@detail')->name('pages.Detail');
@@ -84,6 +85,7 @@ Route::namespace('Backend')->group(function () {
             Route::resource('user', 'UserController');
 
 
+
         });
     });
 });
@@ -91,5 +93,7 @@ Route::namespace('Backend')->group(function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
 
 
