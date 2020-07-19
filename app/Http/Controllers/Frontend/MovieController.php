@@ -31,29 +31,33 @@ class MovieController extends Controller
     public function store(Request $request, $id)
     {
 
-        $checkRate = DB::table('rated_movies')
-            ->where('user_id', Auth::id())
-            ->where('movie_id', $id)
-            ->exists();
+        if(!\Auth::guest()){
+            $checkRate = DB::table('rated_movies')
+                ->where('user_id', Auth::id())
+                ->where('movie_id', $id)
+                ->exists();
 
-        if ($checkRate) {
-            $movie = RatedMovie::where('movie_id', $id)->update(
-                [
-                    "movie_rate" => $request->movie_rate,
-                ]
-            );
-        } else {
-            $movie = RatedMovie::insert(
-                [
-                    "user_id" => Auth::id(),
-                    "movie_id" => $id,
-                    "movie_rate" => $request->movie_rate,
-                ]
-            );
+            if ($checkRate) {
+                $movie = RatedMovie::where('movie_id', $id)->update(
+                    [
+                        "movie_rate" => $request->movie_rate,
+                    ]
+                );
+            } else {
+                $movie = RatedMovie::insert(
+                    [
+                        "user_id" => Auth::id(),
+                        "movie_id" => $id,
+                        "movie_rate" => $request->movie_rate,
+                    ]
+                );
+            }
+        }else{
+            return view('auth.login');
         }
 
         if ($movie) {
-
+            return back()->with('success', 'Process Successful');
         }
         return back()->with('error', 'Process Unsuccessful');
     }

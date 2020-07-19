@@ -43,8 +43,8 @@
                 </li>
                 <li>
                     <div class="form-group" style="margin: 8px;">
-                        <input type="text" name="country_name" id="country_name" class="form-control"
-                               placeholder="Enter Movie Name" autocomplete="off"/>
+                        <input type="text" name="country_name" class="dropdown-toggle" id="country_name" class="form-control"
+                               placeholder="Enter Movie Name" data-toggle="dropdown" aria-haspopup="true" class="dropdown-menu" aria-labelledby="country_name" class="dropdown-menu" aria-labelledby="country_name" autocomplete="off"/>
                         <div id="countryList">
                         </div>
                     </div>

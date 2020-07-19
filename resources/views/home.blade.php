@@ -13,9 +13,9 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
+                        <h3>Recommended Movies for You:</h3>
                         @foreach($data['movies'] as $movie)
-                            <div class="dropdown">
+                            <div class="dropdown col-sm-6">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{$movie->movie_title}}

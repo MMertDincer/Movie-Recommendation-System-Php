@@ -15,21 +15,22 @@ class AutocompleteController extends Controller
 
     function fetch(Request $request)
     {
-        if ($request->get('query')) {
-            $query = $request->get('query');
-            $data = DB::table('movies')
-                ->where('movie_title', 'LIKE', "%{$query}%")
-                ->get();
-            $output = '<ul class="dropdown-menu scrollable-menu" role="menu"  style="display:block; position:absolute">';
-            foreach ($data as $row) {
-                $output .= '
+
+        if (strlen('query') >= 3) {
+            if ($request->get('query')) {
+                $query = $request->get('query');
+                $data = DB::table('movies')
+                    ->where('movie_title', 'LIKE', "%{$query}%")
+                    ->get();
+                $output = '<ul class="dropdown-menu scrollable-menu" role="menu"   style="display:block; position:absolute; right: 400px; left: 1200px">';
+                foreach ($data as $row) {
+                    $output .= '
                            <li><a href="' . route('movies.Detail', $row->movie_slug) . '">' . $row->movie_title . '</a></li>
                            ';
+                }
+                $output .= '</ul>';
+                echo $output;
             }
-            $output .= '</ul>';
-            echo $output;
-
-
         }
     }
 }
